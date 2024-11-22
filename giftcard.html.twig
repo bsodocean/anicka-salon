@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Darkové Poukazy</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="giftcardstyle.css">
+        <link rel="stylesheet" href="transition.css">
+        <script src="https://kit.fontawesome.com/d2fc3e6d80.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+
+  {% extends 'layout.html.twig' %}
+        
+  {% block content %}
+
+  <div class="transition transition-1 is-active"></div>
+
+  <div class="bars">
+    <img src="{{ asset('build/images/logo2.svg') }}" class="logo-mobile"></img>
+    <button class="hamburger">
+        <div class="bar"></div>
+    </button>
+    </div>
+
+            <nav class="mobile">
+                <a href="../Index/index.html" class="page-link">Domů</a>
+                <a href="../About/about.html" class="page-link">O Nás</a>
+                <a href="../Contact/contact.html" class="page-link">Kontakt</a>
+                <a href="../Prices/prices.html" class="page-link">Ceník</a>
+                <a href="../Service/service.html" class="page-link">Služby</a>
+                <a href="../Giftcard/giftcard.html" class="page-link">Dárkové balíčky</a>
+            </nav>
+        
+        
+        <nav id="desktop">            
+            <div class="container">
+                <div class="left-container">
+                    <ul class="nav-left">
+                        <li><a href="../Index/index.html" class="underline">Domů</a></li>
+                        <li><a href="../About/about.html" class="underline">O Nás</a></li>
+                        <li><a href="../Contact/contact.html" class="underline">Kontakt</a></li>
+                    </ul>
+                </div>
+                <img src="logo2.svg" class="logo"></img>
+                <div class="right-container">
+                    <ul class="nav-right">
+                        <li><a href="../Prices/prices.html" class="underline">Ceník</a></li>
+                        <li><a href="../Service/service.html" class="underline">Služby</a></li>
+                        <li><a href="../Giftcard/giftcard.html" class="underline">Dárkové balíčky</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="main-page">
+
+            <div class="showcase_text">
+                <h1>Dárkové poukazy</h1>
+                <p class="p-text">Chcete potěšit své blízké, přátelé nebo rodinu? Nabízíme dárkové poukazy na veškeré z našich služeb.</p>
+            </div>
+
+            
+    < <div class="space">       
+      <div class="img-slider">
+   <div class="slide active">
+     <img src="{{ asset('build/images/womanpoukaz.png') }}" alt="">
+   </div>
+   <div class="slide">
+     <img src="{{ asset('build/images/blue.png') }}" alt="">
+   </div>
+   <div class="slide">
+     <img src="{{ asset('build/images/newred.png') }}" alt="">
+   </div>
+   <div class="slide">
+     <img src="{{ asset('build/images/redvariant.png') }}" alt="">
+   </div>
+   <div class="slide">
+     <img src="{{ asset('build/images/textura.png') }}" alt="">
+   </div>
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+      </div>
+    </div>
+    </div> 
+        </section>
+
+        <section class="info-page">
+          <h2>Více Informací:</h2>
+          <div class="space2">
+            <div class="inform-container">
+              <div class="inform-content">
+                  
+              <h3>Jak objednat dárkový poukaz:</h3>
+              <ul class="inform-list">
+                  <li>U nás si můžete koupit poukaz na jakoukoliv proceduru.</li>
+                  <li>Pro tento poukaz si můžete dojít osobně a zakoupit ho přímo u Nás ve Salónu.</li>
+              </ul>
+  
+              <h3>Výhody dárkového poukazu:</h3>
+  
+               <p class="one">Hlavní výhodou při pořizování dárkového poukazu na masáže je <b>možnost kombinace různých procedur či terapií v rámci jednoho poukazu.</b>
+                  Dokonce můžeme po dohodě vystavit poukaz i pouze na <b>určitou finanční částku a obdarovaný si pak sám vybere z nabídky procedur, které dá přednost.</b></p>     
+  
+ 
+  
+                 <h5>Darkové Balíčky na masáže - typy</h5>
+  
+                 <h4>Kosmetické ošetření</h4>
+                 <p class="h4p">Dárkový poukaz na 4 kosmetické ošetření, zahrňuje 4 kosmetická ošetření, lymfatickou masáž obličeje arganovým olejem, ošetření vrásek laserovým perem. <br>
+                   <b>Cena<span class="numbers"> 1800</span>,- Kč</b>
+                 </p>
+  
+                 <h4>Relaxační masáž</h4>
+                 <p class="h4p">Darkový balíček na 4 relaxační masáže zad, krku a šíje. Dopřejte si relaxační masáž s prohřívacím zábalem z bahna z mrtvého moře, škořicí a čokoládou. <br>
+                     <b>Cena <span class="numbers">1400</span>,- Kč</b>
+                 </p>
+  
+                 <h4>Regenerační masáž</h4>
+                 <p class="h4p">Darkový balíček na 4 regenerační masáž nohou, dopřejte si masáž noh s chladivým zábalem z bylinek. <br>
+                  <b>Cena <span class="numbers">1400</span>,- Kč</b>
+                 </p>
+  
+                 <h4>Hubnoucí program</h4>
+                 <p class="h4p">Hubnoucí program na 6 týdnů + 4 masáže se zábalem, jídelníčkem na míru a poradenstvím. <br>
+                  <b>Cena <span class="numbers">1800</span>,- Kč</b>
+                 </p>
+  
+          </div>
+          </div>
+        </div>
+      </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-info">
+                <p class="name">Anička Salón Plzeň Karlovarská <span class="numbers">30</span> </p> 
+                 <p>kontakt@anickasalon.cz</p> 
+              </div>
+            </div>
+              <div class="facebook-link">
+                <a href="https://www.facebook.com/Salon-Ani%C4%8Dka-878907282235570" target="_blank" class="fb-link"><i class="fa-brands fa-facebook-f"></i></a>
+              </div>
+        </footer>
+        <script src="giftcardS.js"></script>
+</body>         

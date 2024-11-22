@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kontakt</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="conctactstyle.css">
+        <link rel="stylesheet" href="transition.css">
+        <script src="https://kit.fontawesome.com/d2fc3e6d80.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+
+  {% extends 'layout.html.twig' %}
+        
+  {% block content %}
+
+    <div class="transition transition-1 is-active"></div>
+
+    <div class="bars">
+        <img src="{{ asset('build/images/logo2.svg') }}" class="logo-mobile"></img>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+        </div>
+
+
+            <nav class="mobile">
+                <a href="../Index/index.html" class="page-link">Domů</a>
+                <a href="../About/about.html" class="page-link">O Nás</a>
+                <a href="../Contact/contact.html" class="page-link">Kontakt</a>
+                <a href="../Prices/prices.html" class="page-link">Ceník</a>
+                <a href="../Service/service.html" class="page-link">Služby</a>
+                <a href="../Giftcard/giftcard.html" class="page-link">Dárkové balíčky</a>
+            </nav>
+        
+        
+        <nav id="desktop">            
+            <div class="container">
+                <div class="left-container">
+                    <ul class="nav-left">
+                        <li><a href="../Index/index.html" class="underline">Domů</a></li>
+                        <li><a href="../About/about.html" class="underline">O Nás</a></li>
+                        <li><a href="../Contact/contact.html" class="underline">Kontakt</a></li>
+                    </ul>
+                </div>
+                <img src="logo2.svg" class="logo"></img>
+                <div class="right-container">
+                    <ul class="nav-right">
+                        <li><a href="../Prices/prices.html" class="underline">Ceník</a></li>
+                        <li><a href="../Service/service.html" class="underline">Služby</a></li>
+                        <li><a href="../Giftcard/giftcard.html" class="underline">Dárkové balíčky</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="main-page">
+
+            <div class="qtest">
+            <div class="contact">
+                <h1>Kontakt</h1>
+                <p class="contact-info">Platba v hotovosti. Nelze platit kreditní kartou. Akceptujeme také následující poukázky: Sodexo - FLEXI pasy - EDENRED.</p>
+            </div>
+
+            <div class="info">
+                <div class="grid-contacts">
+                    <div class="ico"><i class="fa-solid fa-phone"></i></div>
+                    <div class="detail">
+                     <h2>Zavolejte Nám</h2>
+                     <p class="details-info"><span class="numbers">+420 777 668 781</span></p>
+                     </div>
+                    
+                    <div class="ico"><i class="fa-regular fa-envelope"></i></div>
+                    <div class="detail">
+                    <h2>Napište Nám</h2>
+                    <p class="details-info">kontakt@anickasalon.cz</p>
+                    </div>
+                    
+                    <div class="ico"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="detail">
+                     <h2>Navštivte Nás</h2>
+                     <p class="details-info">Plzeň Karlovarská <span class="numbers">30</span></p>
+                     </div>
+     
+                    <div class="ico"><i class="fa-solid fa-clock"></i></div>
+                    <div class="detail">
+                     <h2>Otevírací doba</h2>
+                     <p class="details-info">Po, Čt– Pá: <span class="numbers">06:00 – 14:00</span></p>
+                     <p class="details-info">Út – St: <span class="numbers">06:00 – 17:00</span></p>
+                    </div>
+            </div>
+            </div>
+            </div>
+        </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2577.438358190935!2d13.369025617443848!3d49.75901070000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470af1f52fbe445b%3A0xc7507d63a50478e8!2zS2FybG92YXJza8OhIDI5OC8zMCwgMzAxIDAwIFBsemXFiCAxLVNldmVybsOtIFDFmWVkbcSbc3TDrQ!5e0!3m2!1sen!2scz!4v1647597918518!5m2!1sen!2scz" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-info">
+                <p class="name">Anička Salón Plzeň Karlovarská <span class="numbers">30</span> </p> 
+                 <p>kontakt@anickasalon.cz</p> 
+              </div>
+            </div>
+              <div class="facebook-link">
+                <a href="https://www.facebook.com/Salon-Ani%C4%8Dka-878907282235570" target="_blank" class="fb-link"><i class="fa-brands fa-facebook-f"></i></a>
+              </div>
+        </footer>  
+
+        <script src="contactS.js"></script>
+</body>

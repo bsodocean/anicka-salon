@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Služby</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="servicestyle.css">
+        <link rel="stylesheet" href="transition.css">
+        <script src="https://kit.fontawesome.com/d2fc3e6d80.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+
+    {% extends 'layout.html.twig' %}
+        
+    {% block content %}
+
+    <div class="transition transition1 is-active"></div>
+
+    <div class="bars">
+        <img src="{{ asset('build/images/logo2.svg') }}" class="logo-mobile"></img>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+        </div>
+
+
+            <nav class="mobile">
+                <a href="../Index/index.html" class="page-link">Domů</a>
+                <a href="../About/about.html" class="page-link">O Nás</a>
+                <a href="../Contact/contact.html" class="page-link">Kontakt</a>
+                <a href="../Prices/prices.html" class="page-link">Ceník</a>
+                <a href="../Service/service.html" class="page-link">Služby</a>
+                <a href="../Giftcard/giftcard.html" class="page-link">Dárkové balíčky</a>
+            </nav>
+        
+        
+        <nav id="desktop">            
+            <div class="container">
+                <div class="left-container">
+                    <ul class="nav-left">
+                        <li><a href="../Index/index.html" class="underline">Domů</a></li>
+                        <li><a href="../About/about.html" class="underline">O Nás</a></li>
+                        <li><a href="../Contact/contact.html" class="underline">Kontakt</a></li>
+                    </ul>
+                </div>
+                <img src="logo2.svg" class="logo"></img>
+                <div class="right-container">
+                    <ul class="nav-right">
+                        <li><a href="../Prices/prices.html" class="underline">Ceník</a></li>
+                        <li><a href="../Service/service.html" class="underline">Služby</a></li>
+                        <li><a href="../Giftcard/giftcard.html" class="underline">Dárkové balíčky</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="main-page">
+            <h1>Naše Služby</h1>
+        </section>
+
+        <section class="page-content">
+        <div class="accordion">
+
+            <div class="accordion-container" id="service1">
+                <div class="wrapper">
+                    <button class="toggle">
+                        Dornova metoda.
+                        <i class="fas fa-plus icon"></i>
+                    </button>
+                    <div class="content">
+                        <p class="contentWrapper">
+                            Rovnání kosterního systému, kloubů, kostrče do původní polohy. Rovnání se provádí za pohybu. Tato speciální terapie je manuální celostní terapií, má dopad komplexní a proto je vhodná u mnoha různých poruch. Vhodná  pro děti jakéhokoliv věku i seniory. 
+                        </p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="accordion-container">
+                    <div class="wrapper">
+                        <button class="toggle">
+                            Fotonová terapie.
+                            <i class="fas fa-plus icon"></i>
+                        </button>
+                        <div class="content">
+                            <p class="contentWrapper">
+                                Zcela neinvazivní chrakter ošetření pleti. Bezbolestné, bezpečné, bez nepříjemných pocitů. Učinné na povadlou a nezdravě vylížející pleť. Pleť má po ošetření omlazený a prozářený pohled.
+                            </p>
+                            <ul class = "includes">
+                                <li>Ultrazvukové vlny kosmetickým přístrojem</li>
+                                <li>Fotonová terapie 3 druhy světla kosmetickým přístrojem</li>
+                                <li>Ionizace (důkladné čištení) pokožky kosmetickým přístrojem</li>
+                                <li>Aplikace živého kolagenu fotonovým perem</li>
+                                <li>Vysokofrekvenční masáž kosmetickým přístrojem</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="accordion-container" id="service3">
+                        <div class="wrapper"> 
+                            <button class="toggle" id="toggle3">
+                                Lymfatické hubnoucí masáže.
+                                <i class="fas fa-plus icon"></i>
+                            </button>
+                            <div class="content">
+                                <p class="contentWrapper">
+                                    Originální program na hubnutí - v tomto programu Vám nabízíme ruční lymfatické masáže se zábaly. Lymfatická masáž je velmi účinná masážní technika, fungující nejen na odstranění mízních otoků ale přispívá také k celkové regeneraci, detoxikací těla, odbourání tukových buněk. <b>V tomto programu také nabízíme jídelníček na míru se správnou detoxikací a poradenstvím s zaručenými výsledky.</b>.
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="accordion-container" id="service2">
+                            <div class="wrapper">
+                                <button class="toggle" id="toggle2">
+                                    Relaxační masáž zad, krku a šíje.
+                                    <i class="fas fa-plus icon"></i>
+                                </button>
+                                <div class="content">
+                                    <p class="contentWrapper">
+                                        Prohřívací uvolňující zábal<b>(Bahno z mrtvého moře s kolagenem nebo skořicový gel nebo čokoládou).</b> Následujici relaxační masáž zad, krku a šíje. Tato masáž je pro tělo velmi přínosná, výrazné prokrvení v masírovaných oblastech.
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="accordion-container" id="service4">
+                                <div class="wrapper">
+                                    <button class="toggle">
+                                        Regenerační masáž nohou.
+                                        <i class="fas fa-plus icon"></i>
+                                    </button>
+                                    <div class="content">
+                                        <p class="contentWrapper">
+                                           Tato regenerační masáž je velmi vhodná pro <b>unavené, těžké, oteklé nohy. </b><b>Také vhodná pro osoby s prací ve stoje a v sedě.</b> Masáž se provádí na nohou zepředu, zezadu, plosky na konec chladivý bylinný zábal, citelná úleva ihned po masáži.
+                                        </p>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="accordion-container">
+                                    <div class="wrapper">
+                                        <button class="toggle">
+                                           Specialní uvolňovací masáž krku.
+                                            <i class="fas fa-plus icon"></i>
+                                        </button>
+                                        <div class="content">
+                                            <p class="contentWrapper">
+                                                Speciální terapeutická uvolňovací masáž krku. Masáž se provádí vleže na zádech, na břiše a po té následuje odpočinek a relaxace v teple. Uvolnění zatuhlých svalů, meridiánů, trapézových svalů, ohýbačů, kývačů, a mezi lopatkových svalů. <b>Pomůže i v případech akutní bolesti namožení, ztuhnutí, problémech s obraly, a častých migrénách.</b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="accordion-container">
+                                        <div class="wrapper">
+                                            <button class="toggle">
+                                                Kosmetické ošetření pleti.
+                                                <i class="fas fa-plus icon"></i>
+                                            </button>
+                                            <div class="content">
+                                                <p class="contentWrapper">
+                                                    Speciální kosmetické ošetření pleti, zahrnuje lymfatickou masáž obličeje arganovým olejem, aplikací kolagenu na dekolt po té aplikací kyseliny hyaluronové na pleť a nakonec ošetření vrásek laserový perem. Po ošetření relaxace ve výživné masce dle druhu pleti, <b>výsledky viditelné ihned po ošetření. Pro maximální zlepšení stavu pleti doporučujeme opakovat proceduru alespoň 4 krát po týdnu.</b>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        </div>
+
+                                        <div class="accordion-container">
+                                            <div class="wrapper">
+                                                <button class="toggle">
+                                                    Posilovací cvičení Vibroshaper.
+                                                    <i class="fas fa-plus icon"></i>
+                                                </button>
+                                                <div class="content">
+                                                    <p class="contentWrapper">
+                                                        Vibroshaper posilovací cvičení, tato procedura trvá cca. 60 minut. Na začátek 10 minut cvičení na Vibroshaperu poté 30 minut teplý skořicový zábal na odbourání podkožního tuku. <b> Toto cvičení napomáhá vytvarovat tělo, posílit svaly, zeštíhlit problematické partie, zlepšit krevní oběh, zmenšení únavy a uvolnění svalů. Doporučujeme při hubnutí 2x až 3x týdně.</b>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            </div>
+
+        </div>
+
+    </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-info">
+                <p class="name">Anička Salón Plzeň Karlovarská <span class="numbers">30</span> </p> 
+                 <p>kontakt@anickasalon.cz</p> 
+              </div>
+            </div>
+              <div class="facebook-link">
+                <a href="https://www.facebook.com/Salon-Ani%C4%8Dka-878907282235570" target="_blank" class="fb-link"><i class="fa-brands fa-facebook-f"></i></a>
+              </div>
+        </footer>  
+
+
+        <script src="serviceS.js"></script>
+    </body>    

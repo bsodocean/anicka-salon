@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ceník</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="pricestyle.css">
+        <link rel="stylesheet" href="transition.css">
+        <script src="https://kit.fontawesome.com/d2fc3e6d80.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+
+    {% extends 'layout.html.twig' %}
+        
+    {% block content %}
+
+    <div class="transition transition-1 is-active"></div>
+
+    <div class="bars">
+        <img src="{{ asset('build/images/logo2.svg') }}" class="logo-mobile"></img>
+        <button class="hamburger">
+            <div class="bar"></div>
+        </button>
+        </div>
+
+            <nav class="mobile">
+                <a href="../Index/index.html" class="page-link">Domů</a>
+                <a href="../About/about.html" class="page-link">O Nás</a>
+                <a href="../Contact/contact.html" class="page-link">Kontakt</a>
+                <a href="../Prices/prices.html" class="page-link">Ceník</a>
+                <a href="../Service/service.html" class="page-link">Služby</a>
+                <a href="../Giftcard/giftcard.html" class="page-link">Dárkové balíčky</a>
+            </nav>
+        
+        
+        <nav id="desktop">            
+            <div class="container">
+                <div class="left-container">
+                    <ul class="nav-left">
+                        <li><a href="../Index/index.html" class="underline">Domů</a></li>
+                        <li><a href="../About/about.html" class="underline">O Nás</a></li>
+                        <li><a href="../Contact/contact.html" class="underline">Kontakt</a></li>
+                    </ul>
+                </div>
+                <img src="logo2.svg" class="logo"></img>
+                <div class="right-container">
+                    <ul class="nav-right">
+                        <li><a href="../Prices/prices.html" class="underline">Ceník</a></li>
+                        <li><a href="../Service/service.html" class="underline">Služby</a></li>
+                        <li><a href="../Giftcard/giftcard.html" class="underline">Dárkové balíčky</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="main-page">
+            
+            <h1>Ceník služeb</h1>
+            
+        </section>
+
+        <section class="price-list">
+
+            <div class="space">
+            <div class="price-container">
+
+                <div class="price-content">
+                    <h2>Dornova metoda</h2>
+                    <p class="h-info">
+                        Rovnání kosterního systému dornovou metodou.
+                    </p>
+                    <p class="price">850 Kč 60 min.</p>
+
+                    <h2>Kontrola Dornovky nad <span class="numbers">30</span> minut</h2>
+                    <p class="h-info">
+                        Kontrola Dornovou metodou nad  <span class="numbers">30</span> minut.
+                    </p>
+                    <p class="price">500 Kč</p>
+
+                    <h2>Akutní ošetření</h2>
+                    <p class="h-info">
+                        Akutní ošetření bez objednání.
+                    </p>
+                    <p class="price">400 Kč</p>
+
+                    <h2>Kontrola Dornovky</h2>
+                    <p class="h-info">
+                        Kontrola Dornovou metodou.
+                    </p>
+                    <p class="price">350 Kč</p>
+                    
+                    <h2>Fotonová terapie pleti</h2>
+                    <p class="h-info">
+                        Neinvazivní ošetření pleti pomocí fotonového přístroje.
+                    </p>
+                    <p class="price">850 Kč 60 min.</p>
+                    
+                    <h2> Hubnoucí lymfatické masáže</h2>
+                    <p class="h-info">
+                        Originální hubnoucí program který nabízí lymfatické masáže se zábalem, jídelníčky na míru, detoxikaci a poradenství v Plzni se zaručenými výsledky.  
+                    </p>
+                    <p class="price">550 Kč 120 min.</p>
+                    
+                    <h2>Relaxační masáž</h2>
+                    <p class="h-info">
+                        Relaxační masáž zad, krku a šíje s teplým uvolňujícím zábalem z bahna mrtvého moře, skořicí nebo čokolády.
+                    </p>
+                    <p class="price">450 Kč 60 min.</p>
+                    
+                    <h2>Regenerační masáž nohou</h2>
+                    <p class="h-info">
+                        Masáž nohou ze předu i zezadu, bylinný chladivý zábal.
+                    </p>
+                    <p class="price">450 Kč 60 min.</p>
+                    
+                    <h2>Speciálná terapeutická masáž</h2>
+                    <p class="h-info">
+                        Terapeutická masáž krku. Provádí se vleže na zádech i na břiše dokonalé uvolnění krční páteře i trapézových svalů.
+                    </p>
+                    <p class="price">500 Kč 60 min.</p>
+                    
+                    <h2>Kosmetické ošetření pleti</h2>
+                    <p class="h-info">
+                        Čištění, kolagen, výživná maska, ošetření vrásek laserovým perem, lymfatická masáž obličeje. 
+                    </p>
+                    <p class="price">550 Kč 60 min.</p>
+                    
+                    <h2>Posilovací Cvičení</h2>
+                    <p class="h-info">
+                        Tvarování těla, spalování tuků, prokrvení končetin.
+                    </p>
+                    <p class="price">200 Kč 60 min.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="space">
+        <div class="price-container">
+        <div class="price-content">
+            <h2>Artroregen kloubní výživa</h2>
+            <p class="h-info">
+                Bylinný sirup.
+            </p>
+            <p class="price">490 Kč</p>
+
+            <h2>Lymforegen na podporu funkce lymfy</h2>
+            <p class="h-info">
+                Bylinný sirup.
+            </p>
+            <p class="price">390 Kč</p>
+
+            <h2>Imunita</h2>
+            <p class="h-info">
+                Bylinný sirup.
+            </p>
+            <p class="price">390 Kč</p>
+
+            <h2>Artroregen</h2>
+            <p class="h-info">
+                Gel na bolesti a uvolnění kloubů.
+            </p>
+            <p class="price">120 Kč</p>
+            
+            <h2>Venuregen</h2>
+            <p class="h-info">
+                Gel na křečové žíly.
+            </p>
+            <p class="price">120 Kč</p>
+            
+            <h2>Lymforegen</h2>
+            <p class="h-info">
+                Gel na podporu funkce lymfy.  
+            </p>
+            <p class="price">120 Kč</p>
+            
+            <h2>Skořice</h2>
+            <p class="h-info">
+                Gel na spalování tuků.
+            </p>
+            <p class="price">120 Kč</p>
+            
+            <h2>Kostiválový Gel</h2>
+            <p class="h-info">
+                Na uvolnění svalů a regeneraci kloubů.
+            </p>
+            <p class="price">450 Kč 60 min.</p>
+            
+            <h2>Lymforegen Čaj</h2>
+            <p class="h-info">
+                Čaj na podporu funkce lymfy.
+            </p>
+            <p class="price">50 Kč</p>
+            
+            <h2>Kyselina hyaluronová</h2>
+            <p class="h-info">
+               Sérum na vyhlazení vrásek. 
+            </p>
+            <p class="price">290 Kč</p>
+            
+            <h2>Bioaktivní kosmetický krém</h2>
+            <p class="h-info">
+                S 24 karátovým zlatem luxusní revitalizační péče o zralou pleť.
+            </p>
+            <p class="price">480 Kč</p>
+
+            <h2>Bioaktivní kosmetický krém Aloe</h2>
+            <p class="h-info">
+                Biakotivní kosmetický krém s Aloe Vera luxusní hloubková hydratece pro mladistvou pleť. Hojí akne, zaceluje jižvičky.
+            </p>
+            <p class="price">320 Kč</p>
+
+            <h2>Bioaktivní kosmetický krém Diamant</h2>
+            <p class="h-info">
+                Biakotivní kosmetický krém s diamantovým prachem luxusní rozjasňující péče o zralou pleť.
+            </p>
+            <p class="price">520 Kč</p>
+        </div>
+    </div>
+    </div>
+            
+        </section>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-info">
+                <p class="name">Anička Salón Plzeň Karlovarská <span class="numbers">30</span> </p> 
+                 <p>kontakt@anickasalon.cz</p> 
+              </div>
+            </div>
+              <div class="facebook-link">
+                <a href="https://www.facebook.com/Salon-Ani%C4%8Dka-878907282235570" target="_blank" class="fb-link"><i class="fa-brands fa-facebook-f"></i></a>
+              </div>
+        </footer>  
+
+        <script src="pricesS.js"></script>
+        
+    </body>
+</html>

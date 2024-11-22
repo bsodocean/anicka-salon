@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Anička Salón Plzeň - Masáže, Kosmetika a Wellness</title>
+        <meta name="description" content="Relaxační masáže, Hubnoucí programy, Dornova terapie a kosmetika to vše najdete v Plzeňském Anička Salónu.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="mainstyle.css">
+        <link rel="stylesheet" href="transition.css">
+        <script src="https://kit.fontawesome.com/d2fc3e6d80.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        {% extends 'layout.html.twig' %}
+        
+        {% block content %}
+
+        <div class="transition transition-1 is-active"></div>
+
+        <div class="bars">
+            <img src="{{ asset('build/images/logo2.svg') }}" class="logo-mobile"></img>
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+            </div>
+
+            <nav class="mobile">
+                <a href="../Index/index.html" class="page-link">Domů</a>
+                <a href="../About/about.html" class="page-link">O Nás</a>
+                <a href="../Contact/contact.html" class="page-link">Kontakt</a>
+                <a href="../Prices/prices.html" class="page-link">Ceník</a>
+                <a href="../Service/service.html" class="page-link">Služby</a>
+                <a href="../Giftcard/giftcard.html" class="page-link">Dárkové balíčky</a>
+            </nav>
+        
+        
+        <nav id="desktop">            
+            <div class="container">
+                <div class="left-container">
+                    <ul class="nav-left">
+                        <li><a href="../Index/index.html" class="underline">Domů</a></li>
+                        <li><a href="../About/about.html" class="underline">O Nás</a></li>
+                        <li><a href="../Contact/contact.html" class="underline">Kontakt</a></li>
+                    </ul>
+                </div>
+                <img src="logo2.svg" class="logo"></img>
+                <div class="right-container">
+                    <ul class="nav-right">
+                        <li><a href="../Prices/prices.html" class="underline">Ceník</a></li>
+                        <li><a href="../Service/service.html" class="underline">Služby</a></li>
+                        <li><a href="../Giftcard/giftcard.html" class="underline">Dárkové balíčky</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="background-container">
+            <video src="candles2.mp4" autoplay loop muted></video>
+            <div class="callout">
+                <h1>Wellness <span class="h1span">&</span> Zdraví</h1>
+            </div>>
+            </section>
+
+            <section class="second">
+
+                <div class="services">
+                    <h2>Oblíbené masáže</h2>
+                    <p class="service-info">Poskytujeme široké spektrum zdravotních procedur. Od rehabilitací, hubnutí po regenerační a relaxační masáže a kosmetiku. </p>
+
+                    <div class="cards-holder">
+
+                        <a class="anchor-wrapper" href="../Service/service.html#service1">
+                            <div class="card">
+                                <div class="card-content"> 
+                                <img src="dornmethodglow.svg" class="icon">
+                                <h3>Dornova Metoda</h3>
+                                <p class="info-card">Skolioza, tenisový loket nebo bolesti hlavy? Zajděte k nám na dornovu metodu!</p>
+                            </div>
+                        </div>
+                    </a>
+    
+                        <a class="anchor-wrapper" href="../Service/service.html#service2">
+                            <div class="card">
+                                <div class="card-content">
+                                <img src="skincare.svg" class="icon">
+                                <h3 class="h3custom">Relaxační Masáž Zad</h3>
+                                <p class="info-card">Dopřejte si naší relaxační masáž zad, krku a šíje s uvolňujícím zábalem z bahna mrtvého moře, čokolády nebo skořice.</p>
+                            </div>
+                            </div>
+                            </a>
+    
+                            <a class="anchor-wrapper" href="../Service/service.html#service3">
+                            <div class="card">
+                                <div class="card-content">
+                                <img src="weightloss.svg" class="icon">
+                                <h3>Lymfatické Masáže</h3>
+                                <p class="info-card">Ve zdravém těle, zdravý duch! Zaregistrujte se u nás na 6 týdenní hubnoucí program s lymfatickými masážemi a zábaly.</p>
+                            </div>
+                            </div>
+                        </a>
+    
+                            <a class="anchor-wrapper" href="../Service/service.html#service4">
+                             <div class="card">
+                                <div class="card-content">
+                                <img src="footmassage.svg" class="icon">
+                                <h3>Regenerační Masáž Nohou</h3>
+                                <p class="info-card">Dopřejte uvolnění namoženým a oteklým nohám naší regenerační masáží s chladivým zábalem z bylinek.</p>
+                            </div>
+                            </div>
+                        </a>
+                        
+                        </div>
+                </div>
+
+                    
+                    <div class="voucher"> 
+                  <div class="txt">
+                        <h4><a href="../Giftcard/giftcard.html" class="anchorv">Dárkové poukazy</a></h4>
+                        <p class="voucher-info">
+Hledáte dárek pro blízké, přátele nebo rodinu? Už dál nemusíte hledat! Nabízíme dárkové poukazy pro kohokoliv.
+                           Vyberte si z naší nabídky služeb již dnes!
+                    </p>
+                </div>
+                <div class="poukaz-holder">
+                    <a href="../Giftcard/giftcard.html" class="anchorv">
+                       <img src="womanpoukaz.png" class="poukaz">
+                    </a>
+                    </div>
+                    </div>
+            
+                    <footer>
+                        <div class="footer-content">
+                            <div class="footer-info">
+                            <p class="name">Anička Salón Plzeň Karlovarská <span class="numbers">30</span> </p> 
+                             <p>kontakt@anickasalon.cz</p> 
+                          </div>
+                        </div>
+
+                          <div class="facebook-link">
+                            <a href="https://www.facebook.com/Salon-Ani%C4%8Dka-878907282235570" target="_blank" class="fb-link"><i class="fa-brands fa-facebook-f"></i></a>
+                          </div>
+                    </footer>    
+                </section>
+                
+                <script type="text/javascript" src="vanilla-tilt.js"></script>
+                <script type="text/javascript">
+                    VanillaTilt.init(document.querySelector(".poukaz"), {
+                        max: 5,
+                        speed: 400,
+                        glare: true,
+                        "max-glare": 1,
+                        perspective: 500,   
+                    });
+                    </script>
+
+            
+            <script src="script.js"></script>
+    </body>
+</html>
